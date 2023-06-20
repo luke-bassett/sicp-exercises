@@ -1,4 +1,4 @@
-#lang racket
+#lang sicp
 (define (sqrt-iter guess x)
   (new-if (good-enough? guess x)
       guess

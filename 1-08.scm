@@ -1,5 +1,5 @@
 ; cube root
-#lang racket
+#lang sicp
 (define (3rt-iter guess x)
    (if (good-enough? guess x)
        guess
