@@ -19,14 +19,10 @@
     (average guess (/ x guess)))
   ((iterative-improve good-enough? improve) 1.0))
 
-(define tolerance 0.0001)
-
 (define (fixed-point f first-guess)
   (define (good-enough? guess)
-    (< (abs (- guess (f guess))) tolerance))
-  (define (improve guess)
-    (f guess))
-  ((iterative-improve good-enough? improve) first-guess))
+    (< (abs (- guess (f guess))) 0.0001))
+  ((iterative-improve good-enough? f) first-guess))
 
 (sqrt 9)
 (fixed-point cos 1.0) ; .739
