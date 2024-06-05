@@ -8,4 +8,5 @@
                      rest)))))
 
 (subset (list 1 2 3))
-; this one still bends my mind -- revisit
+; I looked up the solution to this one and it is still tricky to understand. I
+; feel like I'm right on the verge of really getting it. -- REVISIT
